@@ -22,10 +22,11 @@ function boxClicked(e) {
   if(!spaces[id]){
       spaces[id] = currentPlayer
       e.target.innerText = currentPlayer
-      if(playerHasWon() !==false){
-        playerText = `${currentPlayer} has won!`
+      if(playerHasWon() !== false){
+        console.log(currentPlayer, 'is the winner')
+        playerText.textContent = `${currentPlayer} has won!`
         let winning_blocks = playerHasWon()
-        winning_blocks.map( box => boxes[box].style.backgroundColor = winnerIndicator)
+        winning_blocks.map( box => boxes[box].style.backgroundColor = 'red')
         return 
         
         //console.log(winning_blocks)
@@ -51,7 +52,7 @@ function playerHasWon(){
     if(spaces[a] && (spaces[a] == spaces[b] && spaces[a] == spaces[c])) {
       return [a,b,c]
     }
-    console.log(spaces[a],spaces[b],spaces[c])
+    //console.log(spaces[a],spaces[b],spaces[c])
   
   }
   return false
@@ -60,11 +61,11 @@ function playerHasWon(){
 resetBtn.addEventListener('click', reset)
 function reset(){
   spaces.fill(null)
-  boxes.forEach(box => {
+  boxes.forEach( box => {
     box.innerText = ''
     box.style.backgroundColor=''
   })
-  playerText = 'Tic Tac Toe'
+  playerText.textContent = 'Tic Tac Toe'
   currentPlayer = X_TEXT
 }
 

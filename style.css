@@ -5,7 +5,7 @@
 }
 
 :root {
-  --blue: #1e90ff;
+  --blue: rgb(115, 178, 221);
   --winning-blocks: #b81515;
 }
 
