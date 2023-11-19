@@ -70,3 +70,16 @@ function reset(){
 }
 
 startGame()
+
+//try to make it not complicated Albi make it easy for you use short cuts and learn new codes to make codes alot smaller make it clean baby lets go.
+//start by creating 3 rows of 9 boxes
+// player click button to make a move
+// turn switches for X to O-- X going first
+// creat 9 div boxes starting for 0-8
+// create a player has won with box color changing
+//creat a rest button
+//creat winning combos of which boxes are the winning box
+// creat a winning player thingy where it shows who won
+// creat all winning sides vertical horizantal side to side idk every way possible 
+//make css look good presentaion matters in the future search things up to make it nice
+//
